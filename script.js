@@ -40,7 +40,9 @@ cancelButton.addEventListener("click", closeReplyMessage );
 sendButton.addEventListener("click", closeReplyMessage );
 
 // medium activities
-const inbox = document.querySelector("#inbox");
-const imbox = () => {
-    
+const isRead = document.querySelector("#is-read");
+const inbox = () => {
+    Read.classlist.add("isRead");
 }
+
+isRead.addEventListener("click", isRead );
